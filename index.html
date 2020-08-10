@@ -1,0 +1,102 @@
+﻿<!doctype html>
+<html class="no-js" lang="en-gb">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="Weather APP">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body onLoad="loadHistory()">
+
+    <div class="app-title">
+        <p>WEATHER</p>
+    </div>
+
+    <div class="container-search">
+        <header>
+            <input type="text" class="search-box" placeholder="Search city..." />
+        </header>
+        <input type="button" value="Submit" class="submitButton">
+        <input type="button" value="Favourite" class="favouriteButton">
+    </div>
+
+    <div class="notification" style="text-transform:uppercase"> </div>
+    <div class="padding-class"> </div>
+
+    <div class="container-weather">
+        <div class="weather">
+
+            <div class="date">
+                <p> - </p>
+            </div>
+
+            <div class="weather-icon">
+                <img src="icons/unknown.png">
+            </div>
+            <div class="temperature-value">
+                <p> - °C</p>
+            </div>
+
+            <div class="weather-format">
+
+                <div class="temperature-description" style="text-transform:capitalize">
+                    <p> - </p>
+                </div>
+                <div class="location">
+                    <p> - </p>
+                </div>
+
+                <div class="latitude">
+                    <p> - </p>
+                </div>
+                <div class="longtitude">
+                    <p> - </p>
+                </div>
+                <div class="sunrise">
+                    <p> - </p>
+                </div>
+                <div class="sunset">
+                    <p> - </p>
+                </div>
+                <div class="humidity">
+                    <p> - </p>
+                </div>
+                <div class="pressure">
+                    <p> - </p>
+                </div>
+                <div class="wind-speed">
+                    <p> - </p>
+                </div>
+                <div class="wind-direction">
+                    <p> - </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="padding-class"></div>
+
+    <div class="container-favourites" id="favourites">
+        <h2 for="favourites">Favourites</h2>
+    </div>
+
+    <div class="container-history">
+        <h2 for="history">History</h2>
+        <textarea class="history-textarea" id="history-textarea" disabled rows="10"></textarea>
+    </div>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
